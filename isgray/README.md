@@ -1,59 +1,70 @@
 # Function: isgray
 ## Description
 Check whether the given image is gray or not.
+
 ## calling Sequence
 bool= isgray(img)
-## Parameter
+
+## Input parameter
 img : The input image to be tested. It can be matrix, string, or a image.
-## Detailed explanation
-### Initial check
-The function intially check the input is a text or not.  If the input is text it returns false as the image cannot be of string type.
-In scilab the type number of the string datatype is 10.
-### Image verification
-The given input is tested if it is image or not and whether the dimensions is less than 5 and the No. of the channel is 1 or not.  As the number of channel for the grayscale image is 1.
-For the image check the input is passed to the isimage() 
-* The valid image can be boolean type but the isreal() in scilab cannot handle boolean input. So it is first converted to logical type.
-* The input image should be a non-empty matrix and a non-sparse matrix and can be of type integer, boolean
-All this conditions are verified in isimage()
-### Float check
-If all the above conditions are true then it will check whether the input is a decimal type. If it is decimal type, the input is passed to the ispart(). Which takes two parameters, they are a is_float_image() and the input argument. The image of double type must have all the values between 0 and 1 or be %nan is checked by is_float_image().
-ispart() first checks the corner of the image first and then the rest of the part of the image. This reduces the time of computation.
-The return value of ispart is stored in bool and it will be return value of isgray()
-### Not float
-If the input is not float, then it is checked in either of the three types.
-* uint8
-* uint16
-* int16
-If any this condition is true then the output will true or else false
+
+## Detailed Explanation
+
+### Initial Check 
+The function initially checks whether the input is a text string. If the input is a string, the function returns false because an image cannot be of string type. In Scilab, the type number for the string data type is 10.
+
+### Image Verification 
+The given input is tested to determine if it is an image and whether its dimensions are less than 5. Additionally, it checks if the number of channels is 1, as grayscale images have only one channel. To verify if the input is an image, the isimage() function is used.
+
+A valid image can also be of the Boolean type, but the `isreal()` function in Scilab cannot handle Boolean inputs. Therefore, it is first converted to a logical type. The input image must be a non-empty matrix and a non-sparse matrix, and it can be of types such as integer or Boolean. All these conditions are verified in the `isimage()` function.
+
+**Float Check**  
+If all the above conditions are satisfied, the function checks whether the input is of a decimal type (float). If it is of decimal type, the input is passed to the `ispart()` function, which takes two parameters: `is_float_image()` and the input argument. 
+
+The `is_float_image()` function ensures that all pixel values in the image are between 0 and 1 or are `%nan`. The `ispart()` function first checks the corners of the image and then verifies the rest of the image. This approach reduces computation time. The return value of `ispart()` is stored in `bool`, which becomes the return value of the `isgray()` function.
+
+**Non-Float Check**  
+If the input is not a float, it is checked against the following three data types:  
+
+* `uint8`
+* `uint16`
+* `int16`  
+
+If the input matches any of these types, the function returns `true`. Otherwise, it returns `false`.
+
 ## Test cases
 1. A=[0 0 1; 1 0 1]
 
    isgray(A)
-### ans
+### Result
 T
+
 
 2. a = rand (10)
 
    a(50) = %nan
    
    isgray (a)
-### ans
+### Result
 T
+
 
 3. b(5, 5) = 2
 
    isgray(b)
-### ans
+### Result
 F
+
 
 4.  img= imread('path.jpg')
 
     isgray(img)
-### ans
+### Test evidence
 [https://drive.google.com/file/d/1ehte-v6L2PrSU7c_QYL7_YyIvKZGD9J6/view?usp=drive_link]
+
 
 5. img2=imread('anibn.png')
 
    isgray(img2)
-### ans
+### Test evidence
 [https://drive.google.com/file/d/1DaO4EcrwU_MhGZklYIQC-biN0hcrxZti/view?usp=drive_link]
