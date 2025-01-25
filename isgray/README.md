@@ -60,11 +60,17 @@ F
 
     isgray(img)
 ### Test evidence
-[https://drive.google.com/file/d/1ehte-v6L2PrSU7c_QYL7_YyIvKZGD9J6/view?usp=drive_link]
+[https://drive.google.com/file/d/1ehte-v6L2PrSU7c_QYL7_YyIvKZGD9J6/view?usp=sharing]
 
 
 5. img2=imread('anibn.png')
 
    isgray(img2)
 ### Test evidence
-[https://drive.google.com/file/d/1DaO4EcrwU_MhGZklYIQC-biN0hcrxZti/view?usp=drive_link]
+[https://drive.google.com/file/d/1DaO4EcrwU_MhGZklYIQC-biN0hcrxZti/view?usp=sharing]
+
+6. img3=imread('pathgray.jpg')
+
+   isgray(img3)
+### Test evidence
+[https://drive.google.com/file/d/1Zc6lk7noSxXxsfhJ9u9gpyP-F6ULIUSu/view?usp=sharing]
