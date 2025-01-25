@@ -1,2 +1,7 @@
 # Image_processing_intern
-This repo contains the octave files, scilab files and some image files for testing
+This folder consists of three function implementataion of scilab. They are
+*isrgb
+*isbw
+*isgray
+
+They are created in a way that they are in the Octave as inbuilt functions
