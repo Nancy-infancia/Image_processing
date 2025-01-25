@@ -26,28 +26,34 @@ If the input is not float, then it is checked in either of the three types.
 * int16
 If any this condition is true then the output will true or else false
 ## Test cases
-1.  A=[0 0 1; 1 0 1]
-isgray(A)
+1. A=[0 0 1; 1 0 1]
+
+   isgray(A)
 ### ans
 T
 
-2.  a = rand (10)
-  a(50) = %nan
-  isgray (a)
+2. a = rand (10)
+
+   a(50) = %nan
+   
+   isgray (a)
 ### ans
 T
 
-3.  b(5, 5) = 2
-isgray(b)
+3. b(5, 5) = 2
+
+   isgray(b)
 ### ans
 F
 
 4.  img= imread('path.jpg')
-isgray(img)
+
+    isgray(img)
 ### ans
 [https://drive.google.com/file/d/1ehte-v6L2PrSU7c_QYL7_YyIvKZGD9J6/view?usp=drive_link]
 
 5. img2=imread('anibn.png')
-isgray(img2)
+
+   isgray(img2)
 ### ans
 [https://drive.google.com/file/d/1DaO4EcrwU_MhGZklYIQC-biN0hcrxZti/view?usp=drive_link]
