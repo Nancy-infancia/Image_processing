@@ -12,4 +12,3 @@ function bool=isgray(img)
         end
      end
 endfunction
-
