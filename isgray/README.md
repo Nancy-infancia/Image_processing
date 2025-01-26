@@ -18,12 +18,12 @@ The given input is tested to determine if it is an image and whether its dimensi
 
 A valid image can also be of the Boolean type, but the 'isreal()' function in Scilab cannot handle Boolean inputs. Therefore, it is first converted to a logical type. The input image must be a non-empty matrix and a non-sparse matrix, and it can be of types such as integer or Boolean. All these conditions are verified in the 'isimage()' function.
 
-**Float Check**  
+### Float Check  
 If all the above conditions are satisfied, the function checks whether the input is of a decimal type (float). If it is of decimal type, the input is passed to the 'ispart()' function, which takes two parameters: 'is_float_image()' and the input argument. 
 
 The 'is_float_image()' function ensures that all pixel values in the image are between 0 and 1 or are '%nan'. The 'ispart()' function first checks the corners of the image and then verifies the rest of the image. This approach reduces computation time. The return value of 'ispart()' is stored in 'bool', which becomes the return value of the 'isgray()' function.
 
-**Non-Float Check**  
+## Non-Float Check  
 If the input is not a float, it is checked against the following three data types:  
 
 * uint8
