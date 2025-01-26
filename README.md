@@ -4,4 +4,4 @@ This folder consists of three function implementataion of scilab. They are
 * isbw
 * isgray
 
-They are created in a way that they are in the Octave,as inbuilt functions.
+They are created in a way that they are in Octave,as inbuilt functions.
