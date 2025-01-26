@@ -35,33 +35,33 @@ If the logic argument is set to "non-logical", the function pass the input to th
 If the logic argument is neither logical nor non-logical, the function throws an error message.
 
 ## Test cases
-1. a( 1,  1) = 1;
-   a(50, 50) = 2;
-   isbw(a)
+1.     a( 1,  1) = 1;
+       a(50, 50) = 2;
+       isbw(a)
    ## Result
    F                                                             // since matrix contains values greater than 1
 
-2. img(1, 1) = 2;
-   isbw(img,"non-logical")
+2.     img(1, 1) = 2;
+       isbw(img,"non-logical")
    ## Result
    F
 
-3. y = grand(4, 4, "uin", 0, 1);                                 //creates a uniformly distributed 4*4 matrix of 0's and 1's.
-   isbw(y,"logical")
+3.     y = grand(4, 4, "uin", 0, 1);                                 //creates a uniformly distributed 4*4 matrix of 0's and 1's.
+       isbw(y,"logical")
    ## Result
    F
 
-4. y = grand(4, 4, "uin", 0, 1);
-   isbw(y,"non-logical")
+4.     y = grand(4, 4, "uin", 0, 1);
+       isbw(y,"non-logical")
    ## Result
    T
 
-5. y = grand(4, 4, "uin", 0, 1);
-   isbw (logical (img), "logical")  // A non-logical matrix can be coverted to logical matrix by calling the logical function.
+5.     y = grand(4, 4, "uin", 0, 1);
+       isbw (logical (img), "logical")  // A non-logical matrix can be coverted to logical matrix by calling the logical function.
    ## Result
    T
 
-6. img=imread('path.jpg');
-   isbw(img)
+6.     img=imread('path.jpg');
+       isbw(img)
    ## Result
    [https://drive.google.com/file/d/1VKG72XETAlwWm3FQFqq92jofo74kVKAh/view?usp=sharing]
