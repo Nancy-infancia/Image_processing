@@ -20,23 +20,23 @@ The non-numeric value NaN cannot be converted and will produce an error.
 
 ## Test cases
 1.      logical([1 2 3;5 3 2])
-   ##Result
+   ## Result
    [T T T;T T T]
 
 2.      logical(0)
-    ##Result
+    ## Result
     F
 
 3.      logical(3.14)
-    ##Result
+    ## Result
     T
 
 4.      logical("India")
-    ##Result
+    ## Result
     F
 
 5.      logical([%t %f %f])
-    ##Result
+    ## Result
     T F F
 
 
