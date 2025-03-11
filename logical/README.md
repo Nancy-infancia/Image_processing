@@ -19,23 +19,23 @@ x = Takes all the valid numerical input types(i.e integers, complex numbers, boo
 The non-numeric value NaN cannot be converted and will produce an error. 
 
 ## Test cases
-1.  logical([1 2 3;5 3 2])
+1.      logical([1 2 3;5 3 2])
    ##Result
    [T T T;T T T]
 
-2.  logical(0)
+2.      logical(0)
     ##Result
     F
 
-3.  logical(3.14)
+3.      logical(3.14)
     ##Result
     T
 
-4.  logical("India")
+4.      logical("India")
     ##Result
     F
 
-5.  logical([%t %f %f])
+5.      logical([%t %f %f])
     ##Result
     T F F
 
