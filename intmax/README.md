@@ -48,4 +48,5 @@ Unsupported integer type: float
 255.
 
         intmax(%t)
+### Result
 Input must be an integer type or a string specifying the type.
