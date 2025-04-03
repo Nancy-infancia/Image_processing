@@ -46,5 +46,5 @@ F
 
 6.   cmap=[2 1 -7; 3 2 -5]
      result=iscolormap(cmap)
-# Output
+### Output
 T
