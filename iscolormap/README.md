@@ -1,4 +1,4 @@
-### iscolormap Function
+# iscolormap Function
 
 ## Description
 The `iscolormap` function checks whether the given input is a valid colormap. A colormap is considered valid if it is a numeric, real, floating-point matrix with exactly 3 columns, representing the RGB color components.
@@ -21,27 +21,27 @@ result = iscolormap(cmap)
 
 1.     cmap = jet(64);
        result = iscolormap(cmap);  
-# output
+### output
 T
 
 2.     cmap = [1 0 3; 2 3 1];
        result = iscolormap(cmap);
-# Output
+### Output
 T
 
 3.     result = iscolormap("india"); 
-# Output
+### Output
 F
 
 
 4.     cmap_invalid = rand(64, 4);  // 4 columns instead of 3
        result = iscolormap(cmap_invalid);  
-# Output
+### Output
 F
 
 5.     cmap = [1 0 3 5; 2 3 1 5];
        result = iscolormap(cmap);
-# Output
+### Output
 F
 
 6.   cmap=[2 1 -7; 3 2 -5]
