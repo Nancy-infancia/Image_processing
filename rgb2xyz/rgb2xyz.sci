@@ -1,7 +1,7 @@
 function xyz = rgb2xyz (rgb)
 
   if (argn(2) ~= 1)
-    print_usage ();
+    error(""Wrong number of input arguments);
   end
 
   [rgb, cls, sz, is_im, is_nd, is_int] ...
