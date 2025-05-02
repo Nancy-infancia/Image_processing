@@ -1,10 +1,6 @@
-**Note:** Copyright (C) 2018 - IIT Bombay - FOSSEE. This file must be used under the terms of the CeCILL. This source file is licensed as described in the file COPYING, which you should have received as part of this distribution.  The terms are also available at http://www.cecill.info/licences/Licence_CeCILL_V2-en.txt Author: Nancy Infancia , GCT. Organization: FOSSEE, IIT Bombay. Email: toolbox@scilab.in
-
-
-
 # `lab2xyz` Function Documentation
 
-## Purpose
+## Description
 
 A color in the CIE L*a*b* (or CIE Lab) space consists of lightness L* and two color-opponent dimensions a* and b*. The whitepoint is taken as D65. The CIE L*a*b* colorspace is a colorimetric colorspace, meaning that their values do not depend on the display device hardware. This colorspace is designed to incorporate the human perception of color differences. A color in the CIE XYZ color space consists of three values X, Y and Z. Those values are also designed to be colorimetric.
 
