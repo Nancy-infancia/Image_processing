@@ -5,7 +5,7 @@
 
 `rgb2xyz` converts an image or colormap from the RGB color space to the CIE 1931 XYZ color space using the standard D65 illuminant matrix.
 
-This function handles input images of type `uint8`, `int8`, `uint16`, `single`, or `double` and works with both 2D and 3D arrays. It mimics the behavior of Octave's `rgb2xyz` and supports batch image transformations.
+This function handles input images of type `uint8`, `int8`, `uint16`, or `double` and works with both 2D and 3D arrays.
 
 
 ## Calling Sequence
@@ -35,7 +35,7 @@ xyz = rgb2xyz(rgb)
 
 4. **Normalization**: If the input was of integer type, it's normalized to `double` range `[0, 1]`.
 
-5. **Error Handling**: The function validates the input's type, dimensionality, and real-valued nature before processing.
+5. **Error Handling**: The function validates the input's type, dimensionality, and real-valued nature before processing. Scilab does not handle single input as Matlab or Octave. And it also throws error for single(datatype) input.
 
 
 ## Test Cases  (the result is approximated to the 4 digit floating point)
