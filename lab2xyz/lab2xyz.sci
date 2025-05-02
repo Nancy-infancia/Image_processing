@@ -17,7 +17,7 @@ function xyz = lab2xyz (lab)
 
   [lab, cls, sz, is_im, is_nd, is_int] ...
     = colorspace_conversion_input_check ("lab2xyz", "Lab", lab, 1);
-  //  currently only accept single and double inputs (as Matlab does)
+  //  currently only accept double inputs but does not accept the single input as Matlab does
   // (Integer types would be possible, but would need an explanation in the
   //  help text how to scale them.)
 
