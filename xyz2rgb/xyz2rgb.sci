@@ -19,9 +19,5 @@ function rgb = xyz2rgb (xyz)
   rgb(mask) = 12.92 .* rgb_lin(mask);
   rgb(~mask) = 1.055 .* (rgb_lin(~mask) .^ (1.0/2.4)) - 0.055;
 
-  rgb = max(min(rgb, 1), 0); // clamp to [0,1]
-
-  rgb = round(rgb * 100) / 100;  // round to 2 decimal places
-
   rgb = colorspace_conversion_revert(rgb, cls, sz, is_im, is_nd, is_int, 0);
 endfunction
