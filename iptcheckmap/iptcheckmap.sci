@@ -1,4 +1,12 @@
-function iptcheckmap (in, func_name, var_name, pos)
+// Copyright (C) 2018 - IIT Bombay - FOSSEE
+// This file must be used under the terms of the CeCILL.
+// This source file is licensed as described in the file COPYING, which
+// you should have received as part of this distribution.  The terms
+// are also available at
+// http://www.cecill.info/licences/Licence_CeCILL_V2-en.txt
+// Author: Nancy Infancia, Government college of technology.
+// Organization: FOSSEE, IIT Bombay
+// Email: toolbox@scilab.infunction iptcheckmap (in, func_name, var_name, pos)
 
   if argn(2) ~= 4 
     error("Wrong number of input arguments")
