@@ -68,10 +68,12 @@ F
 
    isgray(img2)
 ### Test evidence
-[https://drive.google.com/file/d/1DaO4EcrwU_MhGZklYIQC-biN0hcrxZti/view?usp=sharing]
+![Screenshot 2025-01-25 163905](https://github.com/user-attachments/assets/7ccf76b4-41d4-47b4-b009-f6e3bbaa5a54)
+
 
 6. img3=imread('pathgray.jpg')
 
    isgray(img3)
 ### Test evidence
-[https://drive.google.com/file/d/1Zc6lk7noSxXxsfhJ9u9gpyP-F6ULIUSu/view?usp=sharing]
+![Screenshot 2025-01-25 171805](https://github.com/user-attachments/assets/2b8d2ee0-86c8-4709-865b-1c750f334669)
+
