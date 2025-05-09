@@ -60,7 +60,8 @@ F
 
     isgray(img)
 ### Test evidence
-[https://drive.google.com/file/d/1ehte-v6L2PrSU7c_QYL7_YyIvKZGD9J6/view?usp=sharing]
+
+![Screenshot 2025-01-25 162954](https://github.com/user-attachments/assets/99c3aa9b-3b6e-4654-92b0-623852dcb58b)
 
 
 5. img2=imread('anibn.png')
