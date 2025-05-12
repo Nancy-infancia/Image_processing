@@ -64,4 +64,4 @@ If the logic argument is neither logical nor non-logical, the function throws an
 6.     img=imread('path.jpg');
        isbw(img)
    ## Test evidence
-   [https://drive.google.com/file/d/1VKG72XETAlwWm3FQFqq92jofo74kVKAh/view?usp=sharing]
+   ![Screenshot 2025-01-26 151105](https://github.com/user-attachments/assets/98e69465-c02a-40a8-98b2-45e2cdc57abe)
