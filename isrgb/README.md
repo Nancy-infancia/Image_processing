@@ -48,11 +48,11 @@ If the input matches any of these types, the function returns 'true'. Otherwise,
 5.     img=imread('path.jpg');
        isrgb(img)
    ### Test evidence
-   [https://drive.google.com/file/d/1itcyvubWtWIjE-HJ8cSlLtKXsm8TKBZU/view?usp=sharing]
+   ![Screenshot 2025-01-26 162421](https://github.com/user-attachments/assets/72e9d47c-1edc-4261-98f7-5d3c3af12e7d)
+
 
 6.     img2=imread('pathgray.jpg');
        isrgb(img2)
    ### Test evidence
-   [https://drive.google.com/file/d/1ODT_8aUXg0bS4ktyqaV1BbbNUzLa10Ak/view?usp=drive_link]
-    
+  ![Screenshot 2025-01-26 163132](https://github.com/user-attachments/assets/9637c03c-8a78-4d75-be48-7c83b07b9035)
 
