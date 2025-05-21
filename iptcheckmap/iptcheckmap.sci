@@ -6,7 +6,10 @@
 // http://www.cecill.info/licences/Licence_CeCILL_V2-en.txt
 // Author: Nancy Infancia, Government college of technology.
 // Organization: FOSSEE, IIT Bombay
-// Email: toolbox@scilab.infunction iptcheckmap (in, func_name, var_name, pos)
+// Email: toolbox@scilab.in
+
+
+function iptcheckmap (in, func_name, var_name, pos)
 
   if argn(2) ~= 4 
     error("Wrong number of input arguments")
