@@ -2,13 +2,15 @@
 
 ## Description
 
-Converts colors from the **CIE Lab (L*a*b*) color space** to the **RGB (Red, Green, Blue)** color space.
+Transform a colormap or image from CIE L*a*b* to sRGB color space.
 
-This function supports both single color values and multi-dimensional arrays (e.g., images), preserving input structure and type. Internally, it performs two steps:
-1. Converts Lab to XYZ using `lab2xyz`.
-2. Converts XYZ to RGB using `xyz2rgb`.
+A color in the CIE L*a*b* (or CIE Lab) space consists of lightness L* and two color-opponent dimensions a* and b*. The whitepoint is taken as D65. The CIE L*a*b* colorspace is a colorimetric colorspace. It is additionally designed to incorporate the human perception of color differences.
 
-The output RGB values are in the range [0,1], representing standard sRGB color space.
+A color in the RGB space consists of red, green, and blue intensities. The input RGB values are interpreted as nonlinear sRGB values with the white point D65. This means the input values are assumed to be in a colorimetric (sRGB) colorspace.
+
+Input values of class single and double are accepted. The shape and the class of the input are conserved.
+
+The input values of L* are normally in the inteval [0, 100] and the values of a* and b* in the interval [-127, 127].
 
 ## Calling Sequence
 
