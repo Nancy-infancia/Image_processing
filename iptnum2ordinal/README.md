@@ -2,8 +2,9 @@
 
 ## Description
 
-This function takes a positive integer as input and returns its corresponding **ordinal string** representation in English. 
-If the number is greater than 20 then this function handles special cases like numbers ending in 1, 2, or 3 (with exceptions like 11, 12, 13) to correctly apply suffixes such as "st", "nd", "rd", and "th".
+Convert number to ordinal string.
+
+num must be a real positive integer which will be converted to a string with its ordinal form ord.
 
 ## Calling Sequence
 
