@@ -2,8 +2,11 @@
 
 ## Description
 
-Checks if the input is a valid colormap. Throws an error with a descriptive message if not.
-A valid colormap must be a non-empty, 2D matrix of doubles with exactly 3 columns (representing RGB values).
+Check if argument is valid colormap.
+
+If in is not a valid colormap, gives a properly formatted error message. func_name is the name of the function to be used on the error message, var_name the name of the argument being checked (for the error message), and pos the position of the argument in the input.
+
+A valid colormap is a 2-D matrix with 3 columns of doubles with values between 0 and 1 (inclusive), that refer to the intensity levels of red, green and blue.
 
 ## Calling Sequence
 
