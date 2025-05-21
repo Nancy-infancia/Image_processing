@@ -17,8 +17,8 @@ Input values of class double, single, uint8 or uint16 are accepted. Output class
 xyz = rgb2xyz(rgb)
 ```
 ## Dependenies
-colorspace_conversion_input_check
-colorspace_conversion_revert
+* colorspace_conversion_input_check
+* colorspace_conversion_revert
 
 ## Input Parameter
 
