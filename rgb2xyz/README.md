@@ -3,16 +3,22 @@
 
 ## Description
 
-`rgb2xyz` converts an image or colormap from the RGB color space to the CIE 1931 XYZ color space using the standard D65 illuminant matrix.
+Transform a colormap or image from sRGB to CIE XYZ color space.
 
-This function handles input images of type `uint8`, `int8`, `uint16`, or `double` and works with both 2D and 3D arrays.
+A color in the RGB space consists of red, green, and blue intensities. The input RGB values are interpreted as nonlinear sRGB values with the white point D65. This means the input values are assumed to be in the colorimetric (sRGB) colorspace.
 
+A color in the CIE XYZ color space consists of three values X, Y and Z. Those values are designed to be colorimetric, meaning that their values do not depend on the display device hardware.
+
+Input values of class double, single, uint8 or uint16 are accepted. Output class is generally of type double. The shape of the input is conserved.
 
 ## Calling Sequence
 
 ```
 xyz = rgb2xyz(rgb)
 ```
+## Dependenies
+colorspace_conversion_input_check
+colorspace_conversion_revert
 
 ## Input Parameter
 
