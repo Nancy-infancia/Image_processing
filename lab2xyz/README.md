@@ -2,18 +2,26 @@
 
 ## Description
 
-A color in the CIE L*a*b* (or CIE Lab) space consists of lightness L* and two color-opponent dimensions a* and b*. The whitepoint is taken as D65. The CIE L*a*b* colorspace is a colorimetric colorspace, meaning that their values do not depend on the display device hardware. This colorspace is designed to incorporate the human perception of color differences. A color in the CIE XYZ color space consists of three values X, Y and Z. Those values are also designed to be colorimetric.
+Transform a colormap or image from CIE L*a*b* to CIE XYZ color space.
+
+A color in the CIE L*a*b* (or CIE Lab) space consists of lightness L* and two color-opponent dimensions a* and b*. The whitepoint is taken as D65. The CIE L*a*b* colorspace is a colorimetric colorspace, meaning that their values do not depend on the display device hardware. This colorspace is designed to incorporate the human perception of color differences.
+
+A color in the CIE XYZ color space consists of three values X, Y and Z. Those values are also designed to be colorimetric.
+
+Input values of class single and double are accepted. The shape and the class of the input are conserved.
+
+The input values of L* are normally in the inteval [0, 100] and the values of a* and b* in the interval [-127, 127].
 
 ## Dependencies
   1. colorspace_conversion_input_check 
   2. colorspace_conversion_revert
 
 ## Syntax
-
 ```scilab
 xyz = lab2xyz(lab)
 ```
-## Description
+
+## Detailed description
 
 This function converts Lab color values to XYZ color values. It calculates intermediate values from the L, a, and b components, and uses a conditional function `f` to handle the non-linear transformation. The output values are scaled using the D65 reference white point to obtain the final XYZ values.
 
@@ -26,3 +34,5 @@ This function converts Lab color values to XYZ color values. It calculates inter
 5. lab2xyz ([68.11, 48.39, 22.83]) #result [0.527644949   0.381214079   0.248283392]
 6. lab2xyz ([60.32, 98.24, -60.83]) #result [0.592841994   0.284800743   0.969605429]
 7. lab2xyz (sparse ([100, 0.00, 0.00])) #result [0.95047   1.   1.08883]
+9. lab2xyz([5 4 3])  #result[0.0062376   0.0055353   0.0039296]
+10. lab2xyz([0 1 0 1 1]) #result error
