@@ -17,7 +17,7 @@ function rgb = lab2rgb (lab)
 
   [lab, cls, sz, is_im, is_nd, is_int] ...
     = colorspace_conversion_input_check ("lab2rgb", "Lab", lab, 1);
-  //  currently only accept double inputs (as Matlab does)
+  //  currently only accept double inputs 
   // (Integer types would be possible, but would need an explanation in the
   //  help text how to scale them.)
 
@@ -27,7 +27,7 @@ function rgb = lab2rgb (lab)
   // transform from CIE XYZ to non-linear sRGB values
   rgb = xyz2rgb (xyz);
 
-  // always return values of type double for Matlab compatibility 
+ 
   rgb = colorspace_conversion_revert (rgb, cls, sz, is_im, is_nd, is_int, 1);
 
 endfunction
