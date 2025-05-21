@@ -17,13 +17,11 @@ function xyz = lab2xyz (lab)
 
   [lab, cls, sz, is_im, is_nd, is_int] ...
     = colorspace_conversion_input_check ("lab2xyz", "Lab", lab, 1);
-  //  currently only accept double inputs but does not accept the single input as Matlab does
-  // (Integer types would be possible, but would need an explanation in the
-  //  help text how to scale them.)
 
-  // use the whitepoint D65 (reference: en.wikipedia.org/wiki/Illuminant_D65)
+
+  // use the whitepoint D65 
   D65 = [0.95047, 1, 1.08883];
-  // Matlab truncates to D65_Matlab = [0.9504, 1.0000, 1.0888];
+ 
 
   // transformation Lab -> XYZ
   L = lab(:,1);
@@ -38,7 +36,7 @@ function xyz = lab2xyz (lab)
 
   xyz = [x, y, z];
 
-  // always return values of type double for Matlab compatibility (exception: type single)
+ 
   xyz = colorspace_conversion_revert (xyz, cls, sz, is_im, is_nd, is_int, 1);
 
 endfunction
