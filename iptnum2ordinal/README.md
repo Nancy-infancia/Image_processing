@@ -25,8 +25,13 @@ Input parameters like string, float or negative numbers through an error.
 * For the numbers greater than 20, it appends the correct suffix to the last digit of the number.
 
 ## Test cases
-1. iptnum2ordinal (1) ##Result "First"
-2. iptnum2ordinal (21) ##Result "21st"
-3. iptnum2ordinal (100) ##Result "100th"
-4. iptnum2ordinal (0)  ##Result error:num must be a real positive integer
-5. iptnum2ordinal (3.4) ##Result error:num must be a real positive integer
+1.     iptnum2ordinal (1)
+   Result "First"
+2.     iptnum2ordinal (21)
+   Result "21st"
+3.     iptnum2ordinal (100)
+   Result "100th"
+4.     iptnum2ordinal (0)
+   Result error:num must be a real positive integer
+5.     iptnum2ordinal (3.4)
+    Result error:num must be a real positive integer
