@@ -28,10 +28,16 @@ It also checks that the arguments func_name and var_name are strings, and that p
 
 # Test cases
 
-1. iptcheckmap (jet(64), 'func', 'var', 2)  ## it works
-2. iptcheckmap (3, 'func', 'var', 2)  ## Result: error message
-3. iptcheckmap (jet(64), 'func', 'var', "india")  ## Result: Argument pos must be a real positive integer
-4. iptcheckmap (jet(64), 2, 'var', 4) ## Result: Argument func_name must be a string
-5.  iptcheckmap (jet(64), 2, 'var', 4) ## Result: Argument func_name must be a string
-6.  iptcheckmap (bone(6), 'func', 'var', 2) ## it works
+1.       iptcheckmap (jet(64), 'func', 'var', 2)
+   Result: it works
+2.       iptcheckmap (3, 'func', 'var', 2)
+   Result: error message
+3.       iptcheckmap (jet(64), 'func', 'var', "india")
+   Result: Argument pos must be a real positive integer
+4.       iptcheckmap (jet(64), 2, 'var', 4)
+   Result: Argument func_name must be a string
+5.        iptcheckmap (jet(64), 2, 'var', 4)
+    Result: Argument func_name must be a string
+6.        iptcheckmap (bone(6), 'func', 'var', 2)
+    Resul: it works
    
