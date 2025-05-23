@@ -1,12 +1,23 @@
 # Function: isrgb
 ## Description
-Check whether the given image is rgb or not.
+Return true if img is a RGB image.
+
+A variable can be considered a RGB image if it is a non-sparse, real array of size MxNx3xK, and:
+
+of floating point class with values in the [0 1] range or NaN;
+of class uint8, uint16, or int16.
+Note: despite their suggestive names, the functions isbw, isgray, isind, and isrgb, are ambiguous since it is not always possible to distinguish between those image types. For example: an uint8 matrix can be both a grayscale and indexed image; a grayscale image may have values outside the range [0 1]. They are good to dismiss input as an invalid image type, but not for identification.
 
 ## calling Sequence
 bool= isrgb(img)
 
 ## Input parameter
 img : The input image to be tested. It can be matrix, string, or a image.
+
+## Dependencies
+* ispart
+* is_float_image
+* isimage
 
 ## Detailed Explanation
 
