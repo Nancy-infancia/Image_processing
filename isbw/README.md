@@ -1,7 +1,17 @@
 # Function: isbw
 
 ## Description
-Checks whether the given image is black and white or not
+Return true if img is a black and white image.
+
+A variable can be considered a black and white image if it is a non-sparse, real array of size MxNx1xK, and, depending on the value of logic:
+
+"logical" (default)
+img must be of class logical.
+
+"non-logical"
+all values in img are either 1 or 0.
+
+Note: despite their suggestive names, the functions isbw, isgray, isind, and isrgb, are ambiguous since it is not always possible to distinguish between those image types. For example: an uint8 matrix can be both a grayscale and indexed image; a grayscale image may have values outside the range [0 1]. They are good to dismiss input as an invalid image type, but not for identification.
 
 ## Calling Sequence
   * bool=isbw(img)
@@ -11,6 +21,11 @@ Checks whether the given image is black and white or not
 ## Input parameter
 img= The input image to be tested. It can be matrix, string, or a image.  
 logic= It is a string type input parameter. Specifies the type of check to be performed.
+
+## Dependencies
+* is_bw_nonlogical
+* ispart
+* isimage
 
 ## Detailed description
 
