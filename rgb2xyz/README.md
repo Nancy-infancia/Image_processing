@@ -46,10 +46,17 @@ xyz = rgb2xyz(rgb)
 
 
 ## Test Cases  (the result is approximated to the 4 digit floating point)
-1. rgb2xyz ([0 0 0])    # result [0, 0, 0]   
-2. rgb2xyz ([1 0 0])    # result [0.4125, 0.2127, 0.0193]
-3. rgb2xyz ([0.5 0.5 0.5]) # result [0.2034, 0.2140, 0.2330]   // checking for float
-4. rgb2xyz ([1.5 1 1])    # result [1.5845, 1.3269, 1.1185]
-5. rgb2xyz (sparse ([0 0 1]))  # result [0.1804, 0.0722, 0.9502]
-6. rgb2xyz (1,2)  # result error (Wrong number of input arguments)
-7. rgb2xyz()   # result error (Wrong number of input arguments)
+1.     rgb2xyz ([0 0 0])
+   # result [0, 0, 0]   
+2.     rgb2xyz ([1 0 0])
+   # result [0.4125, 0.2127, 0.0193]
+3.     rgb2xyz ([0.5 0.5 0.5])
+   # result [0.2034, 0.2140, 0.2330]   // checking for float
+4.     rgb2xyz ([1.5 1 1])
+   # result [1.5845, 1.3269, 1.1185]
+5.     rgb2xyz (sparse ([0 0 1]))
+   # result [0.1804, 0.0722, 0.9502]
+6.     rgb2xyz (1,2)
+   # result error (Wrong number of input arguments)
+7.     rgb2xyz()
+   # result error (Wrong number of input arguments)
